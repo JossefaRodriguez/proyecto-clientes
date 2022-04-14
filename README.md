@@ -28,6 +28,11 @@
 ![image](https://user-images.githubusercontent.com/98556305/163297612-166a4327-0537-449c-982b-f1f97214f4d8.png)
 
  4.2 Insertar un nuevo cliente.
+ 4.3 Confirmar que fue agregado en la tabla cliente.
+ 4.4 Realizar un ROLLBACK.
+ 4.5 Confirmar que se restauró la información, sin considerar la inserción del punto 4.2.
+ 4.6 Habilitar de nuevo el AUTOCOMMIT.
  
  ![image](https://user-images.githubusercontent.com/98556305/163299024-dff5d1e9-4f79-4223-9760-830797aa4901.png)
+ ![image](https://user-images.githubusercontent.com/98556305/163299087-f9f57c41-03f8-45f1-af84-ba8eacdb795c.png)
 
