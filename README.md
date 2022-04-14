@@ -36,6 +36,48 @@ COMMIT;
   
   Mediante el uso de transacciones, realiza las consultas correspondientes para este requerimiento y luego consulta la tabla producto para validar que si alguno de ellos se queda sin stock, no se realice la compra.
 
+```sql
+BEGIN;
+INSERT INTO compra (id, cliente_id, fecha) VALUES (34, 2, '2202-04-13');
+INSERT INTO detalle_compra (id, producto_id, compra_id, cantidad) VALUES (44, 1, 34, 3);
+SELECT stock FROM producto WHERE id = 1;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163301672-d00d4f12-3338-48af-9277-e3936921a482.png)
+
+```sql
+UPDATE producto SET stock = stock - 3 WHERE id = 1;
+SELECT stock FROM producto WHERE id = 1;
+```
+![image](https://user-images.githubusercontent.com/98556305/163301722-bd3493a9-78da-4137-bc7b-7ef434c26207.png)
+
+```sql
+SAVEPOINT producto_1_agregado;
+INSERT INTO detalle_compra (id, producto_id, compra_id, cantidad) VALUES (45, 2, 34, 3);
+SELECT stock FROM producto WHERE id = 2;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163301816-dd538ae4-580e-44cd-a4a1-c0db6187f4c1.png)
+
+```sql
+UPDATE producto SET stock = stock - 3 WHERE id = 2;
+SELECT stock FROM producto WHERE id = 2;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163301845-1a218b05-ee05-4b66-b39a-79888a2fd2e6.png)
+
+```sql
+SAVEPOINT producto_2_agregado;
+INSERT INTO detalle_compra (id, producto_id, compra_id, cantidad) VALUES (46, 8, 34, 3);
+SELECT stock FROM producto WHERE id = 8;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163301867-3ceccb24-18e5-4e87-bde6-ade8dcfe231a.png)
+
+```sql
+ROLLBACK;
+```
+
 ![image](https://user-images.githubusercontent.com/98556305/163297132-b39e9023-bf23-48c0-afea-142160d89c0e.png)
 ![image](https://user-images.githubusercontent.com/98556305/163297164-06b10b48-0dd5-4e07-9d8a-72a9af5caac4.png)
 
