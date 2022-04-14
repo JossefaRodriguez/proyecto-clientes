@@ -20,3 +20,14 @@
 
 ![image](https://user-images.githubusercontent.com/98556305/163297132-b39e9023-bf23-48c0-afea-142160d89c0e.png)
 ![image](https://user-images.githubusercontent.com/98556305/163297164-06b10b48-0dd5-4e07-9d8a-72a9af5caac4.png)
+
+ 4. Realizar las siguientes consultas:
+ 
+ 4.1 Deshabilitar el AUTOCOMMIT.
+
+![image](https://user-images.githubusercontent.com/98556305/163297612-166a4327-0537-449c-982b-f1f97214f4d8.png)
+
+ 4.2 Insertar un nuevo cliente.
+ 
+ ![image](https://user-images.githubusercontent.com/98556305/163299024-dff5d1e9-4f79-4223-9760-830797aa4901.png)
+
