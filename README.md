@@ -82,7 +82,7 @@ ROLLBACK;
  
   4.1 Deshabilitar el AUTOCOMMIT.
 
-![image](https://user-images.githubusercontent.com/98556305/163297612-166a4327-0537-449c-982b-f1f97214f4d8.png)
+![image](https://user-images.githubusercontent.com/98556305/163302244-12cf6f07-abfe-4c8c-890f-bd473986bf40.png)
 
   4.2 Insertar un nuevo cliente.    
   4.3 Confirmar que fue agregado en la tabla cliente.    
