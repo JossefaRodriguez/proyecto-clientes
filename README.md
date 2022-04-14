@@ -1,7 +1,7 @@
 # Desafío "Entendiendo cómo se comportan nuestros clientes"
 
 ## Requerimientos:
-1. Cargar el respaldo de la base de datos unidad2.sql.
+1. Cargar el respaldo de la base de datos `unidad2.sql`.
 2. El cliente usuario01 ha realizado la siguiente compra:
   - Producto: producto9.
   - Cantidad: 5.
