@@ -78,9 +78,6 @@ SELECT stock FROM producto WHERE id = 8;
 ROLLBACK;
 ```
 
-![image](https://user-images.githubusercontent.com/98556305/163297132-b39e9023-bf23-48c0-afea-142160d89c0e.png)
-![image](https://user-images.githubusercontent.com/98556305/163297164-06b10b48-0dd5-4e07-9d8a-72a9af5caac4.png)
-
  4. Realizar las siguientes consultas:
  
   4.1 Deshabilitar el AUTOCOMMIT.
