@@ -14,11 +14,15 @@ BEGIN;
 INSERT INTO compra (id, cliente_id, fecha) VALUES (33, 1, '2202-04-13');
 INSERT INTO detalle_compra (id, producto_id, compra_id, cantidad) VALUES (43, 9, 33, 5);
 SELECT stock FROM producto WHERE id = 9;
+```
+![image](https://user-images.githubusercontent.com/98556305/163300347-eafae547-131b-4f42-9e23-90ad32d27e05.png)
+
+```sql
 UPDATE producto SET stock = stock - 5 WHERE id = 9;
 SELECT stock FROM producto WHERE id = 9;
 COMMIT;
 ```
-![image](https://user-images.githubusercontent.com/98556305/163300347-eafae547-131b-4f42-9e23-90ad32d27e05.png)
+
 
 3. El cliente usuario02 ha realizado la siguiente compra:
   - Producto: producto1, producto 2, producto 8.
