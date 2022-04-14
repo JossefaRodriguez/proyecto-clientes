@@ -20,6 +20,11 @@ SELECT stock FROM producto WHERE id = 9;
 ```sql
 UPDATE producto SET stock = stock - 5 WHERE id = 9;
 SELECT stock FROM producto WHERE id = 9;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163301286-03c6669c-9b96-43ab-b61e-72bdce00f9e0.png)
+
+```sql
 COMMIT;
 ```
 
