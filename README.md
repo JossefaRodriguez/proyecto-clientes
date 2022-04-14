@@ -87,9 +87,31 @@ ROLLBACK;
   4.2 Insertar un nuevo cliente.    
   4.3 Confirmar que fue agregado en la tabla cliente.    
   4.4 Realizar un ROLLBACK.    
-  4.5 Confirmar que se restauró la información, sin considerar la inserción del punto 4.2.    
-  4.6 Habilitar de nuevo el AUTOCOMMIT.
- 
- ![image](https://user-images.githubusercontent.com/98556305/163299024-dff5d1e9-4f79-4223-9760-830797aa4901.png)
- ![image](https://user-images.githubusercontent.com/98556305/163299087-f9f57c41-03f8-45f1-af84-ba8eacdb795c.png)
 
+```sql
+BEGIN;
+SELECT * FROM cliente;
+```
+![image](https://user-images.githubusercontent.com/98556305/163302453-dc566e76-4245-4f04-9dba-cd901ab7daae.png)
+
+```sql
+INSERT INTO cliente(id, nombre, email) VALUES (11, 'Lili Ramirez', 'gataprogramadora@gmail.com');
+SELECT * FROM cliente;
+```
+![image](https://user-images.githubusercontent.com/98556305/163302489-a97e30b2-ad42-4e47-98c2-a86405dede6e.png)
+
+```sql
+ROLLBACK;
+```
+
+  4.5 Confirmar que se restauró la información, sin considerar la inserción del punto 4.2.   
+  
+```sql
+SELECT * FROM cliente;
+```
+
+![image](https://user-images.githubusercontent.com/98556305/163302453-dc566e76-4245-4f04-9dba-cd901ab7daae.png)
+
+  4.6 Habilitar de nuevo el AUTOCOMMIT.
+  
+![image](https://user-images.githubusercontent.com/98556305/163302722-fc42462d-29be-474c-ae36-2a2771d6d70d.png)
